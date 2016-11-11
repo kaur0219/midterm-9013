@@ -1,0 +1,316 @@
+/**************************************************
+Fonts
+Droid Serif
+Droid Sans
+Droid Sans Mono
+
+Font Scaling
+6.854rem
+4.236rem
+2.618rem
+1.618rem
+1.0rem
+0.618rem
+
+Colour scheme
+
+**************************************************/
+@import 'https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Droid+Serif';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Dosis', sans-serif;
+}
+/*************************** 
+DEFAULTS - MOBILE FIRST 
+***************************/
+h1{
+    font: bold 5.236rem 'PT Serif', serif;
+}
+h2{
+    font: bold 3.618rem 'PT Serif', serif;
+}
+li, p, a{
+    font: bold 2.618rem 'Cabin', sans-serif;
+}
+pre, code, kbd{
+    font: normal 2.0rem 'Dosis', 
+}
+/***************************
+    LAYOUT - MOBILE FIRST
+***************************/
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+   background: #000000 url(https://placeimg.com/640/480/animals) 100% 100% no-repeat;
+}
+nav{
+    width: 100%;
+}
+nav>ul{
+    width: 100%;
+}
+nav li{
+    width: 100%;
+    list-style: none;
+}
+nav a,
+nav a:link,
+nav a:visited{
+    display: block;
+    font: bold 1.618rem 'Cabin', sans-serif;
+    text-align: center;
+}
+nav a:active,
+nav a:focus,
+nav a:hover{
+    
+}
+main{
+    width: 100%;
+}
+.col{
+    float: none;
+    width: 100%;
+}
+.col img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    background-color: azure;
+}
+footer{
+    width: 100%;
+}
+
+@media screen and (min-width:600px) {
+    .wrapper {
+        width: 100%;
+    }
+    header h1 {
+        font-size: 60px;
+        padding: 15px 10px;
+    }
+    nav {
+        margin: auto;
+        width: 90%;
+    }
+    nav>ul {
+        float: left;
+        width: 100%;
+        border: 3px solid red;
+        text-align: center;
+    }
+    nav li {
+        width: 30%;
+        float: left;
+        border: none;
+        margin: 0 0;
+    }
+    nav a,
+    nav a:link,
+    nav a:visited {
+        font: bold 1.518rem 'Cabin', sans-serif;
+    }
+    main {
+        margin: auto;
+        width: 90%;
+    }
+    .col {
+        float: left;
+        width: 50%;
+        padding-right: 30px;
+        margin-right: 0;
+    }
+    .col h2 {
+        margin: 15px 10px;
+    }
+    .col img {
+        width: 50%;
+        height: auto;
+        max-width: 60%;
+        float: left;
+        margin: 0 20px 0 0;
+    }
+    .col p {
+        font-weight: 500;
+        text-align: justify;
+        margin: 15px 0;
+        padding: 0;
+        font: normal 1.318rem 'Dosis', sans-serif;
+    }
+    footer {
+        border-top: 3px solid black;
+        padding: 15px 0;
+        width: 100%;
+        text-align: left;
+    }
+    footer p {
+        padding: 0px 10px;
+        display: inline-block;
+        width: 59%;
+        font: normal 1rem 'Cabin', sans-serif;
+    }
+    footer>ul {
+        text-align: left;
+        display: inline-block;
+        width: 59%;
+    }
+    footer li {
+        margin: 0 3px 0 0;
+    }
+    footer a,
+    footer a:link,
+    footer a:visited {
+        font: bold 1rem 'Cabin', sans-serif;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    header h1 {
+        font-size: 60px;
+    }
+    nav {
+        margin: auto;
+        width: 90%;
+    }
+    nav>ul {
+        float: left;
+        width: 100%;
+        border: none;
+        text-align: left;
+    }
+    nav li {
+        text-align: left;
+        width: 30%;
+        float: left;
+        border: none;
+        margin: 0 0;
+    }
+    nav a,
+    nav a:link,
+    nav a:visited {
+        text-align: left;
+        font: bold 2.0rem 'Cabin', sans-serif;
+    }
+    .col h2 {
+        font-size: 50px;
+        margin: 15px 10px;
+    }
+    .col p {
+        font: normal 2.0rem 'Dosis', sans-serif;
+        font-weight: 500;
+    }
+    footer {
+        border-top: 3px solid black;
+        padding: 15px 0;
+        width: 100%;
+        text-align: left;
+    }
+    footer p {
+        padding: 0px 10px;
+        display: inline-block;
+        width: 59%;
+        font: normal 1.9rem 'Cabin', sans-serif;
+    }
+    footer>ul {
+        text-align: right;
+        display: inline-block;
+        width: 59%;
+    }
+    footer li {
+        margin: 0 10px;
+    }
+    footer a,
+    footer a:link,
+    footer a:visited {
+        font: bold 1.9rem 'Cabin', sans-serif;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    header h1 {
+        font-size: 60px;
+        padding: 15px 10px;
+    }
+    nav {
+        width: 30%;
+        float: left;
+        margin: auto;
+    }
+    nav>ul {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+    }
+    nav li {
+        width: 100%;
+        float: none;
+        border: none;
+        padding: 0 25px;
+    }
+    nav a,
+    nav a:link,
+    nav a:visited {
+        font: bold 2.9rem 'Cabin', sans-serif;
+    }
+    main {
+        margin: auto;
+        width: 70%;
+        float: left;
+    }
+    .col {
+        float: left;
+        width: 50%;
+        padding-right: 25px;
+        margin-right: 0;
+    }
+    .col h2 {
+        margin: 15px 10px;
+    }
+    .col p {
+        font: bold 2.1rem 'Cabin',  sans-serif;
+        font-weight: 800;
+    }
+    .col img {
+        width: 60%;
+        max-width: 60%;
+        float: left;
+        margin: 0 15px 0 0;
+    }
+    footer {
+        border-top: 3px solid black;
+        padding: 15px 0;
+        width: 100%;
+        text-align: left;
+    }
+    footer p {
+        padding: 0px 10px;
+        display: inline-block;
+        width: 59%;
+        font: normal 1.9rem 'Cabin', sans-serif;
+    }
+    footer>ul {
+        text-align: right;
+        display: inline-block;
+        width: 59%;
+    }
+    footer li {
+        margin: 0 0 0 15px;
+    }
+    footer a,
+    footer a:link,
+    footer a:visited {
+        font: bold 1.9rem 'Cabin', sans-serif;
+    }
+}
